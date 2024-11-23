@@ -48,7 +48,7 @@ const WelcomePage = () => {
   const location = useLocation();
   const handleFacebookLogin = async () => {
     try {
-      const result = await signInWithRedirect(auth, facebookProvider);
+      const result = await signInWithPopup(auth, facebookProvider);
       const user = result.user;
   
       // Store the email in localStorage
@@ -86,7 +86,7 @@ const WelcomePage = () => {
   };
   const handleGoogleLogin = async () => {
     try {
-      const result = await signInWithRedirect(auth, provider);
+      const result = await signInWithPopup(auth, provider);
       const user = result.user;
   
       // Store the email in localStorage
