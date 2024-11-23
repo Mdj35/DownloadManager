@@ -1,0 +1,92 @@
+.finalize-reservation-container {
+  padding: 40px 20px; /* Added extra padding for more spacing */
+  font-family: 'Georgia', serif; /* More formal font */
+}
+
+.reservation-summary-box {
+  max-width: 650px; /* Slightly wider for better readability */
+  margin: 0 auto;
+  background: #f9f9f9; /* Lighter background for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.reservation-details {
+  margin-bottom: 25px;
+}
+
+.reservation-details p {
+  margin: 8px 0;
+  font-size: 14px; /* Slightly smaller for a formal feel */
+}
+
+.error-message {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #c0392b; /* Darker red for formality */
+}
+
+.sample-button button {
+  padding: 12px 24px;
+  background-color: #2980b9; /* A more formal blue shade */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+}
+
+.sample-button button:hover:not(:disabled) {
+  background-color: #1f6391;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #1f6391;
+}

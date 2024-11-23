@@ -1,0 +1,79 @@
+/* superadminheader.css */
+
+/* Sidebar container */
+.superadmin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #f9e5b5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Admin Dashboard Title */
+  .dashboard-title {
+    color: #050d14;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0; /* Adjust spacing between title and logo */
+    text-align: center;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #03070a;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 0;
+    border-radius: 6px;
+    display: block;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .nav-list a:hover {
+    background-color: #ffffffe3;
+    color: #020508;
+  }
+  

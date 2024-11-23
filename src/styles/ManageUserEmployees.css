@@ -1,0 +1,203 @@
+.background {
+    background-image:url(../../public/images/bg5.jpg) ; /* Light gray background, adjust as needed */
+    background-size: cover;
+    position: absolute; /* Use absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Position behind other elements */
+}
+.manage-users-employees-container {
+    position: relative;
+    max-width: 1100px;
+    margin-top: 50px;
+    margin-left: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-height: 80vh; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: center;
+}
+
+.header-title {
+    color: #000000;
+}
+
+.delete-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-button {
+    padding: 10px 15px;
+    background-color: #f6d08c;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #c3a36d;
+}
+
+.employees-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.employees-table th,
+.employees-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.employees-table th {
+    background-color: #d8d8d8;
+}
+
+.employees-table tr:hover {
+    background-color: #dfdbdb;
+}
+
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button.deactivate {
+    background-color: #dc3545;
+}
+
+.action-button.deactivate:hover {
+    background-color: #c82333;
+}
+
+.action-button.activate {
+    background-color: #28a745;
+}
+
+.action-button.activate:hover {
+    background-color: #218838;
+}
+
+.action-button.vip {
+    background-color: #ffc107;
+}
+
+.action-button.vip:hover {
+    background-color: #e0a800;
+}
+
+.manage {
+    color: #000000;
+    margin-top: 30px;
+    text-align: left;
+}
+.scrollable-table-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: add border for better visibility */
+    margin-bottom: 20px; /* Optional: add margin for spacing */
+}
+
+.background-nice {
+    background-image:url(../../public/images/bg5.jpg) ; /* Light gray background, adjust as needed */
+    background-size: cover;
+    position: absolute; /* Use absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Position behind other elements */
+}
+
+.header-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f6d08c; /* Adjust color as needed */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e7f3fe;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #f6d08c;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c3a36d;
+}
+.services-scrollable {
+    max-height: 340px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: to visually separate the scrollable area */
+    border-radius: 4px; /* Optional: rounded corners */
+    margin-top: 5px; /* Space between label and scrollable area */
+}

@@ -1,0 +1,37 @@
+.modal {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    backdrop-filter: blur(5px); /* Blur the background */
+    z-index: 1000; /* Ensure it is on top */
+  }
+  
+  .modal-content {
+    background-color: white; /* White background for modal content */
+    padding: 20px; /* Padding inside modal */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    max-width: 400px; /* Max width of the modal */
+    width: 90%; /* Responsive width */
+  }
+  
+  .modal-close {
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    position: absolute; /* Position absolute */
+    top: 10px; /* Positioning */
+    right: 10px; /* Positioning */
+  }
+  
+  h3 {
+    margin-top: 0; /* Remove default margin */
+  }
+  

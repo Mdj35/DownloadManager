@@ -1,0 +1,142 @@
+.superadmin-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.form-group .checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.checkbox-group div label {
+    margin: 0;
+}
+
+.form-group div {
+    display: flex;
+    align-items: center;
+}
+
+.form-group div label {
+    margin: 0;
+}
+
+.form-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.form-submit-button:hover {
+    background-color: #d81b60;
+}
+
+.message, .delete-message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.admin-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.admin-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-list li .admin-email {
+    flex-grow: 1;
+}
+
+.admin-list li .delete-button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.admin-list li .delete-button:hover {
+    background-color: #c82333;
+}
+.deactivate-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.deactivate-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+.activate-button {
+    background-color: #00f800; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.activate-button:hover {
+    background-color: #0b770b; /* Darker red */
+}

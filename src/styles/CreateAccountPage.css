@@ -1,0 +1,117 @@
+/* src/components/CreateAccountPage.css */
+
+  .create-account-container1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .create-account-box1 {
+    background: linear-gradient(135deg, #f9e5b5, #f6d08c); /* White background with 80% opacity */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 2; /* Ensure it's above the background */
+  }
+
+  
+  .create-account-box1 h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #1b1207c8;
+    text-align: center;
+  }
+  
+  .form-group1 {
+    margin-bottom: 15px;
+  }
+  
+  .form-group1 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1b1207c8;
+  }
+  
+  .form-group1 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .form-group1 input:focus {
+    border-color: #e91e63;
+    outline: none;
+  }
+  
+  .create-account-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e1a02b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .create-account-button:hover {
+    background-color: #432603;
+  }
+  
+  .back-to-login-button {
+    display: block;
+    margin-top: 20px;
+    color: #1b1207;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .back-to-login-button:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #e91e63;
+    background-color: #ffe3e3;
+    border: 1px solid #e91e63;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* New CSS for checkbox and terms conditions alignment */
+  .terms-conditions {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .terms-conditions input[type="checkbox"] {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .terms-conditions label {
+    font-size: 0.9rem;
+    color: #1b1207c8;
+  }
+  
+  .terms-conditions a {
+    color: #043949;
+    text-decoration: none;
+  }
+  
+  .terms-conditions a:hover {
+    text-decoration: underline;
+  }
+                                          

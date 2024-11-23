@@ -1,0 +1,150 @@
+
+
+/* Main Container for the Reservations */
+.user-reservations-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* Reservations Box - The Box That Contains Everything */
+.reservations-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header of the Reservations */
+.reservations-box h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f;
+  margin-bottom: 20px;
+}
+
+/* Date Filter Section */
+.date-filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#reservation-date {
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Reservation Cards Container - Flexbox for the Cards */
+.reservations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 370px; /* Adjust height as needed */
+}
+
+/* Individual Reservation Card */
+.reservation-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px); /* 3 per row, minus the gap */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.reservation-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.reservation-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reservation-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Service Details Inside the Reservation Card */
+.service-details {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.service-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Styling for Scrollable Area */
+.reservations-grid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reservations-grid::-webkit-scrollbar-thumb {
+  background-color: #c59f47;
+  border-radius: 4px;
+}
+
+.reservations-grid::-webkit-scrollbar-thumb:hover {
+  background-color: #f6d08c;
+}
+/* Tabs Container */
+
+.reservation-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual Tab Button */
+.tab-button {
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Active Tab Styling */
+.tab-button.active {
+  background-color: #c59f47; /* Primary color for active tab */
+  color: #fff; /* White text for contrast */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Slight lift effect */
+  border-bottom: 2px solid #ddd;
+}
+
+/* Tab Hover Effect */
+.tab-button:hover {
+  background-color: #f6e2b3; /* Slightly lighter color on hover */
+  color: #333;
+}

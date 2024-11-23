@@ -1,0 +1,67 @@
+/* LogoutConfirmation.css */
+
+.logout-confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.logout-confirmation-box {
+    background-color: var(--background-box);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+}
+
+.logout-confirmation-box h3 {
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.logout-confirmation-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-button,
+.cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.yes-button {
+    background-color: #f6d08c;
+}
+
+/* Spinner styles */
+.spinner {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid var(--focus-color); /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

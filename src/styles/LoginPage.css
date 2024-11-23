@@ -1,0 +1,107 @@
+/* src/components/LoginPage.css */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center; /* Center align text and logo */
+}
+
+.login-logo {
+  max-width: 150px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 20px; /* Space between logo and heading */
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #e91e63;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2e1a02b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px; /* Adjust spacing between buttons */
+}
+
+.login-button:hover {
+  background-color: #432603 !important; /* Force the hover color */
+}
+
+/* New CSS for additional buttons */
+.additional-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+}
+
+.create-account-button2, .back-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #060505;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space between buttons */
+  text-align: center; /* Center text inside buttons */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.create-account-button2:hover {
+  background-color: #2e1a024e;
+  width: 95%;
+}
+
+.back-button {
+  color: #333;
+}
+
+.back-button:hover {
+  background-color: #f1f1f1;
+}

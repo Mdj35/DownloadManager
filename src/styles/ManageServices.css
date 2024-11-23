@@ -1,0 +1,155 @@
+/* Main container */
+.background {
+    background-image:url(../../public/images/bg5.jpg) ; /* Light gray background, adjust as needed */
+    background-size: cover;
+    position: absolute; /* Use absolute positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Position behind other elements */
+}
+.manage-services-container {
+    max-width: 1100px;
+    margin-left: 400px;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+/* Header */
+.manage-services-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Input fields */
+.input-field {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Add button */
+.add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Service list */
+.services-list {
+    list-style: none;
+    padding: 0;
+    max-height: 400px; /* Set a maximum height for scrolling */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional: Add border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    margin-top: 10px; /* Space between the form and the list */
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+    transition: background-color 0.3s;
+}
+
+.service-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.service-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Service details */
+.service-details {
+    flex: 1;
+    text-align: left;
+}
+
+/* Status styling */
+.status {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.status.available {
+    color: green;
+}
+
+.status.not-available {
+    color: red;
+}
+
+/* Buttons */
+.toggle-status-btn,
+.edit-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-status-btn {
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-status-btn:hover {
+    background-color: #218838;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Filter container */
+.filter-container {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Space below the filter container */
+}
+ .h2-manage {
+    margin-top: 1px;
+ }
