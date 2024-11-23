@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from "firebase/storage"; // Import Firebase Storage
-import { getAuth, GoogleAuthProvider, signInWithPopup,FacebookAuthProvider } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signInWithPopup,FacebookAuthProvider,signInWithRedirect } from 'firebase/auth';
 
 
 // Your web app's Firebase configuration
@@ -28,4 +28,4 @@ const facebookProvider = new FacebookAuthProvider();
 const provider = new GoogleAuthProvider(); // Initialize Firebase Storage
 
 // Export the app and storage
-export { app, storage,auth,provider ,signInWithPopup,facebookProvider};
+export { app, storage,auth,provider ,signInWithPopup,facebookProvider,signInWithRedirect};

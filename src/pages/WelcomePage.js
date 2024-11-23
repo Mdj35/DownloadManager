@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import CreateAccountPage from './CreateAccountPage';
 import '../styles/WelcomePage.css';
-import { auth, provider, signInWithPopup,facebookProvider } from '../firebaseConfig';
+import { auth, provider, signInWithPopup,facebookProvider,signInWithRedirect } from '../firebaseConfig';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FaFacebook, FaInstagram, FaFacebookMessenger, FaPhone } from 'react-icons/fa';
@@ -48,7 +48,7 @@ const WelcomePage = () => {
   const location = useLocation();
   const handleFacebookLogin = async () => {
     try {
-      const result = await signInWithPopup(auth, facebookProvider);
+      const result = await signInWithRedirect(auth, facebookProvider);
       const user = result.user;
   
       // Store the email in localStorage
@@ -86,7 +86,7 @@ const WelcomePage = () => {
   };
   const handleGoogleLogin = async () => {
     try {
-      const result = await signInWithPopup(auth, provider);
+      const result = await signInWithRedirect(auth, provider);
       const user = result.user;
   
       // Store the email in localStorage
